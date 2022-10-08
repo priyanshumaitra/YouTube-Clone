@@ -67,7 +67,7 @@ svg {
 }
 
 .navigation__search__icon:hover {
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
 }
 
 .navigation__search__icon svg {
@@ -88,8 +88,37 @@ svg {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: blue;
-  /* background: url("../assets/navigation-avatar.png"); */
+  background-color: grey;
+  /* background: url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"); */
 }
 
-/* Navigation section ends */
+.chips {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  position: fixed;
+  top: 56px;
+  right: 0;
+  left: 240px;
+  background-color: white;
+}
+
+.chips__item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e5e5e5;
+  font-size: 14px;
+  padding: 0 12px;
+  line-height: 30px;
+  border-radius: 16px;
+  margin: 12px 12px 12px 0;
+  cursor: pointer;
+}
+
+.chips__item:first-child {
+  margin-left: 24px;
+}
+
+.chips__item--selected {
+  background-color: black;
+  color: white;
+}
