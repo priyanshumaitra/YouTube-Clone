@@ -92,6 +92,8 @@ svg {
   /* background: url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"); */
 }
 
+/* Chips under Navigation Section */
+
 .chips {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -122,6 +124,8 @@ svg {
   background-color: black;
   color: white;
 }
+
+/* Sidebar Section Starts */
 
 .sidebar {
   width: 240px;
