@@ -122,3 +122,78 @@ svg {
   background-color: black;
   color: white;
 }
+
+.sidebar {
+  width: 240px;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  padding: 12px 0;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+}
+
+.sidebar__section {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__section h3 {
+  padding-left: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #606060;
+}
+
+.sidebar__section__link {
+  display: flex;
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 24px;
+  height: 40px;
+}
+
+.sidebar__section__link svg,
+.sidebar__section__avatar {
+  height: 24px;
+  width: 24px;
+  margin-right: 24px;
+  color: #030303;
+  fill: var(--iron-icon-fill-color, currentcolor);
+  stroke: var(--iron-icon-stroke-color, none);
+}
+
+.sidebar__section__avatar {
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.sidebar__section__link--selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.sidebar__section__link--selected svg {
+  fill: #000;
+}
+
+.sidebar__section:last-child {
+  padding: 16px 24px 0 24px;
+}
+
+.sidebar__section:last-child p {
+  font-size: 13px;
+  color: #909090;
+}
+
+.sidebar__section__link--small {
+  margin-right: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #606060;
+  text-decoration: none;
+}
