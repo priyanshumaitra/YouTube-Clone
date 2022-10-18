@@ -32,6 +32,7 @@ svg {
   right: 0;
   left: 0;
   background-color: white;
+  z-index: 2;
 }
 
 .navigation__button {
@@ -115,6 +116,7 @@ svg {
   right: 0;
   left: 240px;
   background-color: white;
+  z-index: 2;
 }
 
 .chips__item {
@@ -235,7 +237,6 @@ svg {
   display: flex;
   align-items: center;
   flex-direction: column;
-  z-index: -1;
 }
 
 .recommendation__row{
@@ -254,6 +255,14 @@ svg {
   width:350px;
   /*background-color: aqua;*/
   margin:0px 10px;
+  cursor:pointer;
+}
+
+.recommendation .recommendation__row .content__link{
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+  margin:0px;
 }
 
 .recommendation__row .recommendation__content .thumbnail{
@@ -261,6 +270,7 @@ svg {
   height:197px;
   /*background-color: beige;*/
   margin:10px 0px;
+  position: relative;
 }
 
 .recommendation__row .recommendation__content .thumbnail img{
@@ -269,19 +279,44 @@ svg {
   object-fit: cover;
 }
 
+.recommendation__row .recommendation__content .thumbnail .duration{
+  position: absolute;
+  bottom:5px;
+  right:5px;
+  height:auto;
+  width:auto;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+}
+
+.recommendation__row .recommendation__content .thumbnail .duration h5{
+  margin:5px;
+  color:white;
+  letter-spacing: 1px;
+}
+
 .recommendation__row .recommendation__content .content__description{
   height:103px;
   width:350px;
   /*background-color: #606060;*/
   margin:5px 0px;
   display: flex;
+  position: relative;
 }
 
 .recommendation__row .recommendation__content .content__description .channel__logo{
   height:103px;
-  width:15%;
+  width:50px;
   /*background-color: #030303;*/
   display: flex;
+  justify-content: center;
+}
+
+.recommendation__row .recommendation__content .content__description .channel__logo .channel__link{
+  height:45px;
+  width:45px;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -320,6 +355,7 @@ svg {
 .recommendation__row .recommendation__content .content__description .title_and_channel .channel {
   height:auto;
   width:100%;
+  color:#606060;
   /*background-color: maroon;*/
 }
 
@@ -332,9 +368,17 @@ svg {
   margin-left:5px;
 }
 
+.recommendation__row .recommendation__content .content__description .title_and_channel .channel .channel__link {
+  text-decoration: none;
+  color:#606060;
+}
+
+.recommendation__row .recommendation__content .content__description .title_and_channel .channel .channel__link:hover {
+  color:black;
+}
+
 .recommendation__row .recommendation__content .content__description .title_and_channel .channel p{
   font-size: 14px;
-  color:#606060;
   margin:2px 0px;
   padding:0px;
 }
@@ -345,4 +389,16 @@ svg {
   background-color: #606060;
   border-radius: 50%;
   margin:0px 5px;
+}
+
+.recommendation__row .recommendation__content .content__description .menu__button{
+  position:absolute;
+  top:3px;
+  right:2px;
+  height:auto;
+  width:auto;
+}
+.recommendation__row .recommendation__content .content__description .menu__button svg{
+  height:20px;
+  width:20px;
 }
