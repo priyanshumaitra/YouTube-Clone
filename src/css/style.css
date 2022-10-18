@@ -49,7 +49,16 @@ svg {
   display: flex;
   align-items: center;
 }
+.navigation__menu{
+  width:25%;
+}
 
+.navigation__search{
+  width:70%;
+}
+.navigation__options{
+  width:10%;
+}
 .navigation__options .navigation__button {
   margin-right: 8px;
 }
@@ -65,18 +74,23 @@ svg {
 }
 
 .navigation__search input {
-  width: 360px;
-  height: 32px;
+  width: 62%;
   border: 1px solid rgb(211, 211, 211);
   font-size: 16px;
-  padding: 3px 8px;
+  padding: 10px 8px;
+  margin-left: 34px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px
 }
 
 .navigation__search__icon {
   border: 1px solid rgb(211, 211, 211);
   border-left: none;
-  height: 32px;
+  height: 40px;
   width: 65px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color:#f8f8f8;
 }
 
 .navigation__search__icon:hover {
