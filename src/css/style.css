@@ -169,6 +169,7 @@ svg {
 .sidebar__section {
   padding: 8px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .sidebar__section h3 {
@@ -184,6 +185,7 @@ svg {
   color: rgb(3, 3, 3);
   text-decoration: none;
   align-items: center;
+  justify-content: start;
   font-size: 14px;
   padding: 0 24px;
   height: 40px;
@@ -415,4 +417,11 @@ svg {
 .recommendation__row .recommendation__content .content__description .menu__button svg{
   height:20px;
   width:20px;
+}
+
+.scroll::-webkit-scrollbar{
+  display: none;
+}
+a.sidebar__section__link, a.sidebar__section__link--selected{
+  width: 100%;
 }
