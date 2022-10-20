@@ -7,16 +7,17 @@ body {
 svg {
   fill: rgb(96, 96, 96);
 }
+
 /* Scroll-bar Customization */
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 17px;
 }
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.6);
   border: 4px solid white;
   border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -207,6 +208,16 @@ svg {
   overflow-y: scroll;
 }
 
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  /* width: 5px; */
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .sidebar__section {
   padding: 8px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -229,7 +240,7 @@ svg {
   font-size: 14px;
   padding: 0 24px;
   height: 40px;
-  width: 175px;
+  width: 100%;
 }
 
 .sidebar__section__link:hover {
