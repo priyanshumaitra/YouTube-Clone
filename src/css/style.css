@@ -213,6 +213,10 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
 }
 
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+}
+
 .sidebar:hover::-webkit-scrollbar-thumb {
   /* width: 5px; */
   background-color: rgba(0, 0, 0, 0.2);
