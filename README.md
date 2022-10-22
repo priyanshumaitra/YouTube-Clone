@@ -1,4 +1,4 @@
-<h1> Youtube Clone </h1>
+<h1> YouTube Clone </h1>
 
 <div align="center">
 
