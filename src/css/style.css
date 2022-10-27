@@ -133,6 +133,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .voice:hover {
   background: rgba(100, 100, 100, 0.2);
+  cursor: pointer;
 }
 
 .voice svg {
@@ -154,6 +155,9 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 50%;
   background-color: grey;
   /* background: url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"); */
+}
+.navigation__avatar{
+  cursor: pointer;
 }
 
 /* Chips under Navigation Section */
@@ -356,14 +360,15 @@ body::-webkit-scrollbar-thumb:hover {
   right: 5px;
   height: auto;
   width: auto;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
 }
 
 .recommendation__row .recommendation__content .thumbnail .duration h5 {
   margin: 5px;
   color: white;
   letter-spacing: 1px;
+  font-weight: 200;
 }
 
 .recommendation__row .recommendation__content .content__description {
@@ -531,6 +536,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: auto;
   width: auto;
 }
+
 .recommendation__row
   .recommendation__content
   .content__description
