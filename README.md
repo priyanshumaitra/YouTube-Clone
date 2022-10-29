@@ -13,7 +13,7 @@
 
 "Youtube Clone" is a clone of the home page of YouTube.
 <br></br>
-You can see the project by clicking at the link: https://github.com/priyanshumaitra/YouTube-Clone
+You can see the project by clicking at the link: https://youtube-home-clone.vercel.app/
 
 <h2> Features </h2>
 
